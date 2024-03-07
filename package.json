@@ -1,6 +1,6 @@
 {
-  "name": "typed-json-rpc",
-  "version": "1.0.2",
+  "name": "tiny-typed-json",
+  "version": "1.0.0",
   "description": "Simple, statically typed and ergonomic way to do async communications (events, workers, http requests) with json-rpc",
   "main": "./lib/src/index.js",
   "files": [
