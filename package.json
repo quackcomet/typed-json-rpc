@@ -1,19 +1,16 @@
 {
   "name": "tiny-typed-json",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple, statically typed and ergonomic way to do async communications (events, workers, http requests) with json-rpc",
   "main": "./lib/src/index.js",
   "files": [
     "lib/**/*"
   ],
   "scripts": {
-    "build": "tsc",
     "clean": "rm -rf ./lib/",
     "prettier": "prettier --write \"src/**/*.ts\"",
     "cm": "cz",
-    "coverage": "codecov",
     "lint": "eslint ./src/ --fix",
-    "prepare": "husky install",
     "semantic-release": "semantic-release",
     "test:watch": "jest --watch",
     "test": "jest --coverage",
@@ -21,12 +18,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ptol/typed-json-rpc.git"
+    "url": "https://github.com/quackcomet/typed-json-rpc.git"
   },
   "license": "MIT",
   "author": {
     "name": "ptol",
-    "url": "https://github.com/ptol"
+    "url": "https://github.com/quackcomet"
   },
   "engines": {
     "node": ">=12.0"
@@ -36,11 +33,11 @@
     "typescript",
     "web-worker"
   ],
-  "bugs": {
-    "url": "https://github.com/ptol/typed-json-rpc/issues"
+  "dependencies": {
+    "codecov": "3.8.3",
+    "commitizen": "4.2.4",
+    "cz-conventional-changelog": "3.3.0"
   },
-  "homepage": "https://github.com/ptol/typed-json-rpc#readme",
-  "dependencies": {},
   "devDependencies": {
     "@types/jest": "27.4.1",
     "@types/node": "12.20.11",
